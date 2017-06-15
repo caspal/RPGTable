@@ -1,6 +1,49 @@
 # RPGTable
 RPGTable is a virtual table which provides a battle plan to support Pen & Paper Role-playing game players.
 
+## Run it
+1. Build it
+```
+$ ./bin/build.sh
+```
+2. Go into the the new created *dist* folder
+3. Start it
+```
+$ .start.sh
+```
+
+## Folder structure
+```
+|-- bin
+|   |-- build.sh
+|   `-- test.sh
+|-- browser
+|   |-- dist
+|   |-- src
+|   `-- Gruntfile.js
+|-- conf
+|-- server
+|   |-- src
+|   |   |-- main
+|   |   `-- test
+|   |-- build.gradle
+|   |-- dependencies.gradle
+|   `-- gradlew
+`-- README.md
+```
+
+### bin
+The bin folder contains scripts to build, start and test the application.
+
+### browser
+The browser folder contains all files related to HTML5 client. We choose the name browser instead of client, because this allows us to add an additional client, e. g. an android client, easily.
+
+### server
+The server folder contains the back end, which is based on [Vert.x](http://vertx.io/)
+
+## IDE
+There is no specific IDE you have to use, but there are already Eclipse projects. But especially for the content in folder *browser* it could make sense to use an IDE which is more HTML5/JavaScript friendly.
+
 ## Contribute
 We are using Gerrit, so PRs in Github will be ignored. Please use [GerritHub.io](https://review.gerrithub.io)
 to contribute changes. The project name is *caspal/RPGTable*
