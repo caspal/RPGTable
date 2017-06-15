@@ -1,0 +1,19 @@
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+
+  // Vertx
+  String vertx_version = '3.4.2'
+  compile group: 'io.vertx', name: 'vertx-core', version: vertx_version
+  compile group: 'io.vertx', name: 'vertx-web', version: vertx_version
+
+  // Utils
+  compile group: 'com.google.guava', name: 'guava', version: '22.0'
+
+  // Test
+  testCompile group: 'junit', name: 'junit', version: '4.12'
+  testCompile group: 'io.vertx', name: 'vertx-unit', version: vertx_version
+  testCompile group: 'com.google.truth', name: 'truth', version: '0.33'
+}
