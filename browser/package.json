@@ -1,0 +1,17 @@
+{
+	"name": "RPGTable-HTML5-Client",
+	"version": "0.0.1",
+	"description": "An HTML5 Client For RPGTable",
+	"author": "Pascal Krause",
+	"scripts": {
+		"grunt": "./node_modules/grunt/bin/grunt"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"grunt": "1.0.1",
+		"load-grunt-tasks": "3.5.2",
+		"grunt-contrib-clean": "1.1.0",
+		"grunt-contrib-copy": "1.0.0"
+	}
+}
