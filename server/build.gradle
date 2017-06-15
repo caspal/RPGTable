@@ -1,0 +1,66 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+  dependencies {
+    classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.4'
+  }
+}
+
+apply plugin: 'base'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+apply from: 'dependencies.gradle'
+
+mainClassName = "io.vertx.core.Launcher";
+String mainVerticle = "info.pascalkrause.rpgtable.WebRouterVerticle";
+
+eclipse {
+  jdt {
+    sourceCompatibility=1.8
+    targetCompatibility=1.8
+  }
+}
+
+test {
+  dependsOn 'cleanTest'
+  testLogging {
+    events = ["passed", "skipped", "failed", "standardOut", "standardError"]
+  }
+}
+
+shadowJar {
+  mergeServiceFiles()
+  exclude 'META-INF/*.DSA'
+  exclude 'META-INF/*.RSA'
+}
+
+jar {
+  manifest {
+    attributes(
+      'Main-Class': mainClassName,
+      'Main-Verticle': mainVerticle
+    )
+  }
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '4.0'
+}
+
+task makeDirs {
+  description 'make all dirs for project setup'
+  doLast {
+    def sources = [
+      sourceSets.main,
+      sourceSets.test
+    ]
+    sources*.allSource*.srcDirs.flatten().each { File srcDir ->
+      println "making $srcDir"
+      srcDir.mkdirs()
+    }
+  }
+}
