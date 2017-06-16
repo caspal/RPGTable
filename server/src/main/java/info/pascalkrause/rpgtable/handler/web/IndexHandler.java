@@ -1,4 +1,4 @@
-package info.pascalkrause.rpgtable.handler;
+package info.pascalkrause.rpgtable.handler.web;
 
 import java.io.IOException;
 
