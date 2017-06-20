@@ -38,7 +38,7 @@ public abstract class ImageRouterTest {
         vertx = Vertx.vertx();
 
         config = new RPGTableConfig(RPGTableConfigOptions.defaults().setEnvTest(true)
-                .setHttpPort(TestUtils.getFreePort()).setWorkspaceDir(null).setBodySizeLimitBytes(20));
+                .setHttpPort(TestUtils.getFreePort()).setWorkspaceDir(null).setBodySizeLimitBytes(100));
         DeploymentOptions options = new DeploymentOptions().setConfig(config.toJsonObject());
         vertx.deployVerticle(new WebRouterVerticle(imageApiMock), options, context.asyncAssertSuccess());
 

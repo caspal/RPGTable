@@ -15,6 +15,7 @@ import org.mockito.stubbing.Answer;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.io.Files;
+import com.google.common.io.Resources;
 import com.google.common.net.MediaType;
 
 import info.pascalkrause.rpgtable.error.BasicError;
@@ -33,6 +34,10 @@ public class TestUtils {
         int port = socket.getLocalPort();
         socket.close();
         return port;
+    }
+
+    public static Buffer readFile(String ressourcePath) throws IOException {
+        return Buffer.buffer(Resources.asByteSource(Resources.getResource(ressourcePath)).read());
     }
 
     public static String createTempWorkspaceDir() {
