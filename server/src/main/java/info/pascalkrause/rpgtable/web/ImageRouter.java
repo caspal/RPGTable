@@ -10,7 +10,7 @@ import info.pascalkrause.rpgtable.error.BasicError;
 import info.pascalkrause.rpgtable.error.EmptyRequestBodyError;
 import info.pascalkrause.rpgtable.error.UnexpectedError;
 import info.pascalkrause.rpgtable.utils.RPGTableConfig;
-import info.pascalkrause.rpgtable.web.handler.BodySizeLimitHandler;
+import info.pascalkrause.rpgtable.web.handler.RequestBodyHandler;
 import io.vertx.core.Vertx;
 import io.vertx.core.http.HttpHeaders;
 import io.vertx.core.http.HttpMethod;
@@ -36,7 +36,7 @@ public class ImageRouter {
 
         router.get("/").handler(this::list);
         router.post("/").consumes(MediaType.OCTET_STREAM.toString())
-                .handler(new BodySizeLimitHandler(RPGTableConfig.getOrCreate(vertx).BODY_SIZE_LIMIT_BYTES));
+                .handler(new RequestBodyHandler(RPGTableConfig.getOrCreate(vertx).BODY_SIZE_LIMIT_BYTES));
         router.post("/").consumes(MediaType.OCTET_STREAM.toString()).handler(this::create);
         router.get("/:" + URI_PARAM_NAME_OR_ID).handler(this::get);
         router.delete("/:" + URI_PARAM_NAME_OR_ID).handler(this::delete);
