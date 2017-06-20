@@ -3,17 +3,17 @@ package info.pascalkrause.rpgtable;
 import static com.google.common.truth.Truth.assertThat;
 
 import java.io.IOException;
-import java.net.ServerSocket;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import info.pascalkrause.rpgtable.utils.RPGTableConfig;
+import info.pascalkrause.rpgtable.utils.RPGTableConfig.RPGTableConfigOptions;
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Vertx;
 import io.vertx.core.http.HttpHeaders;
-import io.vertx.core.json.JsonObject;
 import io.vertx.ext.unit.Async;
 import io.vertx.ext.unit.TestContext;
 import io.vertx.ext.unit.junit.VertxUnitRunner;
@@ -25,7 +25,7 @@ import io.vertx.ext.unit.junit.VertxUnitRunner;
 public class RouterVerticleTest {
 
     private Vertx vertx;
-    private Integer port;
+    private RPGTableConfig config;
 
     /**
      * Before executing our test, let's deploy our verticle.
@@ -40,14 +40,9 @@ public class RouterVerticleTest {
     @Before
     public void setUp(TestContext context) throws IOException {
         vertx = Vertx.vertx();
-
-        // Let's configure the verticle to listen on the 'test' port (randomly picked).
-        // We create deployment options and set the _configuration_ json object:
-        ServerSocket socket = new ServerSocket(0);
-        port = socket.getLocalPort();
-        socket.close();
-
-        DeploymentOptions options = new DeploymentOptions().setConfig(new JsonObject().put("http.port", port));
+        config = new RPGTableConfig(RPGTableConfigOptions.defaults().setEnvTest(true)
+                .setHttpPort(TestUtils.getFreePort()).setWorkspaceDir(TestUtils.createTempWorkspaceDir()));
+        DeploymentOptions options = new DeploymentOptions().setConfig(config.toJsonObject());
 
         // We pass the options as the second parameter of the deployVerticle method.
         vertx.deployVerticle(WebRouterVerticle.class.getName(), options, context.asyncAssertSuccess());
@@ -61,6 +56,7 @@ public class RouterVerticleTest {
      */
     @After
     public void tearDown(TestContext context) {
+        vertx.fileSystem().deleteRecursiveBlocking(config.WORKSPACE_DIR, true);
         vertx.close(context.asyncAssertSuccess());
     }
 
@@ -80,7 +76,7 @@ public class RouterVerticleTest {
         // the 'Welcome' message. Then, we call the `complete` method on the async handler to declare
         // this async (and here the test) done. Notice that the assertions are made on the 'context'
         // object and are not Junit assert. This ways it manage the async aspect of the test the right way.
-        vertx.createHttpClient().getNow(port, "localhost", "/", response -> {
+        vertx.createHttpClient().getNow(config.HTTP_PORT, "localhost", "/", response -> {
             response.exceptionHandler(context.exceptionHandler());
             response.bodyHandler(body -> {
                 assertThat(response.statusCode()).isEqualTo(200);
