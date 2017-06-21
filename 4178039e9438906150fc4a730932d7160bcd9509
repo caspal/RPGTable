@@ -1,0 +1,135 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4651d1f0_a39629f8",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/WebRouterVerticle.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-06-21T14:52:52Z",
+      "side": 1,
+      "message": "Missing comment/javadoc for the class.",
+      "revId": "4178039e9438906150fc4a730932d7160bcd9509",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "643ca1d5_a51c5586",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/handler/IndexHandler.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-06-21T14:52:52Z",
+      "side": 1,
+      "message": "Missing comment/javadoc for the class.",
+      "revId": "4178039e9438906150fc4a730932d7160bcd9509",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5b56b4d0_9c263da0",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/handler/IndexHandler.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-06-21T14:52:52Z",
+      "side": 1,
+      "message": "Missing comment/javadoc for the constructor.",
+      "revId": "4178039e9438906150fc4a730932d7160bcd9509",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "50161c74_565257c7",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-06-21T14:52:52Z",
+      "side": 1,
+      "message": "What exactly is the meaning of this?",
+      "range": {
+        "startLine": 32,
+        "startChar": 7,
+        "endLine": 32,
+        "endChar": 11
+      },
+      "revId": "4178039e9438906150fc4a730932d7160bcd9509",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c67f6598_4184a6c9",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-06-21T14:52:52Z",
+      "side": 1,
+      "message": "This sentence seems to be missing something.",
+      "range": {
+        "startLine": 33,
+        "startChar": 84,
+        "endLine": 34,
+        "endChar": 16
+      },
+      "revId": "4178039e9438906150fc4a730932d7160bcd9509",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e576a9cb_542c7482",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-06-21T14:52:52Z",
+      "side": 1,
+      "message": "Missing full stop at the end of the sentence.",
+      "revId": "4178039e9438906150fc4a730932d7160bcd9509",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fe1431e3_75e7d186",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-06-21T14:52:52Z",
+      "side": 1,
+      "message": "...we check that it contains...",
+      "revId": "4178039e9438906150fc4a730932d7160bcd9509",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
