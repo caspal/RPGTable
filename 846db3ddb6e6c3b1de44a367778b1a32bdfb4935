@@ -72,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "c2219142_482cbfe2",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-06-21T14:22:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4443897c_9b0f0d8c",
+      "range": {
+        "startLine": 10,
+        "startChar": 20,
+        "endLine": 10,
+        "endChar": 26
+      },
+      "revId": "846db3ddb6e6c3b1de44a367778b1a32bdfb4935",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1eb648fa_1cd729d6",
         "filename": "README.md",
         "patchSetId": 2
@@ -136,6 +160,30 @@
       "writtenOn": "2017-06-18T20:52:43Z",
       "side": 1,
       "message": "Should be \"The maximum length...\".",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 64
+      },
+      "revId": "846db3ddb6e6c3b1de44a367778b1a32bdfb4935",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ebb8e7b9_e40bad2d",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-06-21T14:22:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e03d3457_2266f149",
       "range": {
         "startLine": 12,
         "startChar": 0,
