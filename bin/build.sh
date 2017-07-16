@@ -24,6 +24,6 @@ distDir=\$( cd "\$(dirname "\${0}")" ; pwd -P )
 JAR="\${distDir}/RPGTable.jar"
 CONF="\${distDir}/conf/vertx-conf.json"
 
-java -jar "\${JAR}" -conf "\${CONF}" "\${1}"
+java -jar "\${JAR}" -conf "\${CONF}" -Dworkspace.dir="\${distDir}"
 EOF
 chmod +x "${projectDir}/dist/start.sh"
