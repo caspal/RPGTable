@@ -13,6 +13,8 @@ import io.vertx.core.json.JsonObject;
 public class BasicError extends Error {
 
     public static enum ErrorType {
+        RESOURCE_NOT_FOUND(404, "Resource Not Found"),
+        RESOURCE_ALREADY_EXIST(409, "Resource Already Exist"),
         UNEXPECTED_ERROR(500, "Unexpected Error");
 
         private final int statuscode;
