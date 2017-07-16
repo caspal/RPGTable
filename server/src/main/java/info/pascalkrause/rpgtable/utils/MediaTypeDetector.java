@@ -25,7 +25,7 @@ public class MediaTypeDetector {
     }
 
     @VisibleForTesting
-    static MediaType detectBlocking(Buffer buffer) {
+    public static MediaType detectBlocking(Buffer buffer) {
         // According to the documentation [1] only a few bytes are necessary.
         // [1] https://tika.apache.org/1.15/api/org/apache/tika/Tika.html#detect-byte:A-
         int prefixBytes = 1024 * 3; // 3 kibibyte
