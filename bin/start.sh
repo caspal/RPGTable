@@ -6,4 +6,4 @@ projectDir=$(dirname ${bindir})
 JAR="${projectDir}/dist/RPGTable.jar"
 CONF="${projectDir}/conf/vertx-conf.json"
 
-java -jar "${JAR}" -conf "${CONF}" "${1}"
+java -jar "${JAR}" -conf "${CONF}" -Dworkspace.dir="${projectDir}"
