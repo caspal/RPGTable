@@ -13,6 +13,7 @@ import io.vertx.core.json.JsonObject;
 public class BasicError extends Error {
 
     public static enum ErrorType {
+        RESOURCE_NOT_FOUND(404, "Resource Not Found"),
         UNEXPECTED_ERROR(500, "Unexpected Error");
 
         private final int statuscode;
@@ -61,7 +62,7 @@ public class BasicError extends Error {
         this.message = message;
         this.timestamp = timestamp;
     }
-    
+
     public ErrorType getType() {
         return type;
     }
