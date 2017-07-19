@@ -13,8 +13,11 @@ import io.vertx.core.json.JsonObject;
 public class BasicError extends Error {
 
     public static enum ErrorType {
+        EMPTY_REQUEST_BODY(400, "Empty Request Body"),
+        INVALID_CONTENT_TYPE(400, "Invalid Content Type"),
         RESOURCE_NOT_FOUND(404, "Resource Not Found"),
         RESOURCE_ALREADY_EXIST(409, "Resource Already Exist"),
+        REQUEST_BODY_TOO_LARGE(413, "Request Body Too Large"),
         UNEXPECTED_ERROR(500, "Unexpected Error");
 
         private final int statuscode;
