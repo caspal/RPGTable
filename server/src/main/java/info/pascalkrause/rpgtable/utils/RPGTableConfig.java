@@ -13,6 +13,7 @@ public class RPGTableConfig {
 
     public static class RPGTableConfigOptions {
         public final static boolean ENV_TEST_DEFAULT = false;
+        public final static int BODY_SIZE_LIMIT_DEFAULT = 1024 * 1024 * 5; // 5 mebibyte
         public final static int HTTP_PORT_DEFAULT = 8080;
 
         private final JsonObject config;
@@ -20,6 +21,7 @@ public class RPGTableConfig {
         private RPGTableConfigOptions() {
             config = new JsonObject();
             config.put(ENV_TEST_KEY, ENV_TEST_DEFAULT);
+            config.put(BODY_SIZE_LIMIT_BYTES_KEY, BODY_SIZE_LIMIT_DEFAULT);
             config.put(HTTP_PORT_KEY, HTTP_PORT_DEFAULT);
             config.put(WORKSPACE_DIR_KEY, System.getProperty(WORKSPACE_DIR_KEY));
         }
@@ -60,10 +62,14 @@ public class RPGTableConfig {
     public final static String HTTP_PORT_KEY = "http.port";
     public final int HTTP_PORT;
 
+    public final static String BODY_SIZE_LIMIT_BYTES_KEY = "http.request.bodySizeLimitBytes";
+    public final int BODY_SIZE_LIMIT_BYTES;
+
     public final static String ENV_TEST_KEY = "env.test";
     public final boolean ENV_TEST;
 
-    private final static Set<String> KEYS = ImmutableSet.of(WORKSPACE_DIR_KEY, HTTP_PORT_KEY, ENV_TEST_KEY);
+    private final static Set<String> KEYS = ImmutableSet.of(WORKSPACE_DIR_KEY, HTTP_PORT_KEY, ENV_TEST_KEY,
+            BODY_SIZE_LIMIT_BYTES_KEY);
     private final RPGTableConfigOptions options;
 
     private RPGTableConfig(RPGTableConfigOptions options) {
@@ -71,6 +77,7 @@ public class RPGTableConfig {
         this.ENV_TEST = options.config.getBoolean(ENV_TEST_KEY);
         this.HTTP_PORT = options.config.getInteger(HTTP_PORT_KEY);
         this.WORKSPACE_DIR = options.config.getString(WORKSPACE_DIR_KEY);
+        this.BODY_SIZE_LIMIT_BYTES = options.config.getInteger(BODY_SIZE_LIMIT_BYTES_KEY);
     }
 
     public static RPGTableConfig getOrCreate(Vertx vertx) {
