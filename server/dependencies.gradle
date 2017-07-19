@@ -22,4 +22,9 @@ dependencies {
 
   // Embedded MongoDB
   testCompile group: "de.flapdoodle.embed", name: "de.flapdoodle.embed.mongo", version: "2.0.0"
+
+  // Mockito
+  def mockito_version = '2.8.47'
+  testCompile group: 'org.mockito', name: 'mockito-core', version: mockito_version
+  testCompile group: 'org.mockito', name: 'mockito-inline', version: mockito_version
 }
