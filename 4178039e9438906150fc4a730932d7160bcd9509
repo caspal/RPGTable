@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "fc91fbc5_2f3ef848",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-07-22T22:23:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "17ab000a_9c5a86cf",
+      "revId": "4178039e9438906150fc4a730932d7160bcd9509",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c081d665_c712ec4f",
         "filename": "README.md",
         "patchSetId": 7
@@ -59,6 +77,48 @@
     },
     {
       "key": {
+        "uuid": "12a2b757_4d4c55ca",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-07-22T22:23:55Z",
+      "side": 1,
+      "message": "? I don\u0027t understand",
+      "parentUuid": "c081d665_c712ec4f",
+      "revId": "4178039e9438906150fc4a730932d7160bcd9509",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "21ac088a_67414770",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-07-22T22:23:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b9c56589_e0e89fdb",
+      "range": {
+        "startLine": 39,
+        "startChar": 66,
+        "endLine": 39,
+        "endChar": 72
+      },
+      "revId": "4178039e9438906150fc4a730932d7160bcd9509",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4651d1f0_a39629f8",
         "filename": "server/src/main/java/info/pascalkrause/rpgtable/WebRouterVerticle.java",
         "patchSetId": 7
@@ -70,6 +130,24 @@
       "writtenOn": "2017-06-21T14:52:52Z",
       "side": 1,
       "message": "Missing comment/javadoc for the class.",
+      "revId": "4178039e9438906150fc4a730932d7160bcd9509",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a0471e0_fbf1adf5",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/WebRouterVerticle.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-07-22T22:23:55Z",
+      "side": 1,
+      "message": "I will not provide JavaDoc for each class",
+      "parentUuid": "4651d1f0_a39629f8",
       "revId": "4178039e9438906150fc4a730932d7160bcd9509",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -93,6 +171,24 @@
     },
     {
       "key": {
+        "uuid": "58c92111_80d6f8ef",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/handler/IndexHandler.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-07-22T22:23:55Z",
+      "side": 1,
+      "message": "Won\u0027t fix",
+      "parentUuid": "643ca1d5_a51c5586",
+      "revId": "4178039e9438906150fc4a730932d7160bcd9509",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5b56b4d0_9c263da0",
         "filename": "server/src/main/java/info/pascalkrause/rpgtable/handler/IndexHandler.java",
         "patchSetId": 7
@@ -104,6 +200,24 @@
       "writtenOn": "2017-06-21T14:52:52Z",
       "side": 1,
       "message": "Missing comment/javadoc for the constructor.",
+      "revId": "4178039e9438906150fc4a730932d7160bcd9509",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a5d0dcc_769969ec",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/handler/IndexHandler.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-07-22T22:23:55Z",
+      "side": 1,
+      "message": "Won\u0027t fix",
+      "parentUuid": "5b56b4d0_9c263da0",
       "revId": "4178039e9438906150fc4a730932d7160bcd9509",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
