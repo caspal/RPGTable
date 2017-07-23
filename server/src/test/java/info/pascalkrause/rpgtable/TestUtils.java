@@ -2,10 +2,16 @@ package info.pascalkrause.rpgtable;
 
 import java.io.IOException;
 import java.net.UnknownHostException;
+import java.util.List;
+import java.util.Optional;
+import java.util.function.Function;
 
+import org.mockito.invocation.InvocationOnMock;
+import org.mockito.stubbing.Answer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.google.common.collect.ImmutableList;
 import com.google.common.io.Resources;
 
 import de.flapdoodle.embed.mongo.Command;
@@ -19,6 +25,7 @@ import de.flapdoodle.embed.mongo.distribution.Version;
 import de.flapdoodle.embed.process.config.IRuntimeConfig;
 import de.flapdoodle.embed.process.config.io.ProcessOutput;
 import de.flapdoodle.embed.process.runtime.Network;
+import io.vertx.core.AsyncResult;
 import io.vertx.core.Handler;
 import io.vertx.core.Vertx;
 import io.vertx.core.buffer.Buffer;
@@ -72,5 +79,25 @@ public class TestUtils {
         opts.addReporter(new ReportOptions().setTo("file:./testreports/").setFormat("junit"));
         opts.addReporter(new ReportOptions().setTo("file:./testreports/").setFormat("simple"));
         return opts;
+    }
+    
+    public static <E> Answer<Void> createAsyncResultAnswer(Function<InvocationOnMock, AsyncResult<E>> resultbuilder) {
+        Answer<Void> a = (invocation) -> {
+            List<Object> args = ImmutableList.copyOf(invocation.getArguments());
+            Optional<Object> handler = args.stream().filter(o -> o instanceof Handler).findFirst();
+            if (handler.isPresent() && handler.get() instanceof Handler) {
+                @SuppressWarnings("unchecked")
+                Handler<AsyncResult<E>> h = (Handler<AsyncResult<E>>) handler.get();
+                h.handle(resultbuilder.apply(invocation));
+            } else {
+                throw new RuntimeException("No Handler was found");
+            }
+            return null;
+        };
+        return a;
+    }
+
+    public static <E> Answer<Void> createAsyncResultAnswer(AsyncResult<E> result) {
+        return createAsyncResultAnswer(i -> result);
     }
 }
