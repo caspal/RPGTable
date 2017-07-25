@@ -15,6 +15,8 @@ public class RPGTableConfig {
         public final static boolean ENV_TEST_DEFAULT = false;
         public final static int BODY_SIZE_LIMIT_DEFAULT = 1024 * 1024 * 5; // 5 mebibyte
         public final static int HTTP_PORT_DEFAULT = 8080;
+        public final static int MONGO_PORT_DEFAULT = 27017;
+        public final static String MONGO_HOST_DEFAULT = "127.0.0.1";
 
         private final JsonObject config;
 
@@ -23,6 +25,8 @@ public class RPGTableConfig {
             config.put(ENV_TEST_KEY, ENV_TEST_DEFAULT);
             config.put(BODY_SIZE_LIMIT_BYTES_KEY, BODY_SIZE_LIMIT_DEFAULT);
             config.put(HTTP_PORT_KEY, HTTP_PORT_DEFAULT);
+            config.put(MONGO_PORT_KEY, MONGO_PORT_DEFAULT);
+            config.put(MONGO_HOST_KEY, MONGO_HOST_DEFAULT);
             config.put(WORKSPACE_DIR_KEY, System.getProperty(WORKSPACE_DIR_KEY));
         }
 
@@ -56,6 +60,12 @@ public class RPGTableConfig {
         }
     }
 
+    public final static String MONGO_PORT_KEY = "mongo.port";
+    public final int MONGO_PORT;
+    
+    public final static String MONGO_HOST_KEY = "mongo.host";
+    public final String MONGO_HOST;
+    
     public final static String WORKSPACE_DIR_KEY = "workspace.dir";
     public final String WORKSPACE_DIR;
 
@@ -69,7 +79,7 @@ public class RPGTableConfig {
     public final boolean ENV_TEST;
 
     private final static Set<String> KEYS = ImmutableSet.of(WORKSPACE_DIR_KEY, HTTP_PORT_KEY, ENV_TEST_KEY,
-            BODY_SIZE_LIMIT_BYTES_KEY);
+            BODY_SIZE_LIMIT_BYTES_KEY, MONGO_HOST_KEY, MONGO_PORT_KEY);
     private final RPGTableConfigOptions options;
 
     private RPGTableConfig(RPGTableConfigOptions options) {
@@ -78,6 +88,8 @@ public class RPGTableConfig {
         this.HTTP_PORT = options.config.getInteger(HTTP_PORT_KEY);
         this.WORKSPACE_DIR = options.config.getString(WORKSPACE_DIR_KEY);
         this.BODY_SIZE_LIMIT_BYTES = options.config.getInteger(BODY_SIZE_LIMIT_BYTES_KEY);
+        this.MONGO_HOST = options.config.getString(MONGO_HOST_KEY);
+        this.MONGO_PORT = options.config.getInteger(MONGO_PORT_KEY);
     }
 
     public static RPGTableConfig getOrCreate(Vertx vertx) {
