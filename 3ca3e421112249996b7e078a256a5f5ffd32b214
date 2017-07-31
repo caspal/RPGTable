@@ -1,0 +1,129 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2399055c_78d0e8f6",
+        "filename": "README.md",
+        "patchSetId": 10
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-07-31T11:53:56Z",
+      "side": 1,
+      "message": "related to the HTML5 client",
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4c68d393_7d6d2746",
+        "filename": "browser/package.json",
+        "patchSetId": 10
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-07-31T11:53:56Z",
+      "side": 1,
+      "message": "An HTML5 Client\nFor rules of when to use a or an see\nhttp://www.englishpage.com/articles/a-vs-an.htm",
+      "range": {
+        "startLine": 4,
+        "startChar": 18,
+        "endLine": 4,
+        "endChar": 19
+      },
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1beeaa75_18b5bf50",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-07-31T11:53:56Z",
+      "side": 1,
+      "message": "Is this \u003cp/\u003e a leftover from a copy-paste or intentional?",
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf76395f_5f22809d",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-07-31T11:53:56Z",
+      "side": 1,
+      "message": "This method instantiates a new Vertx and deploys the verticle. Then, it waits to see if the verticle",
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3290821e_9a96d645",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-07-31T11:53:56Z",
+      "side": 1,
+      "message": "just cleans up everything",
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d5d7d840_8774de58",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-07-31T11:53:56Z",
+      "side": 1,
+      "message": "an HTTP client",
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c89d1fde_9362210a",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-07-31T11:53:56Z",
+      "side": 1,
+      "message": "it manages the",
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
