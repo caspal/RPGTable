@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c38404d9_48cca926",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/utils/Utils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-08-01T10:53:21Z",
+      "side": 1,
+      "message": "Trailing whitespaces.",
+      "revId": "3b373577818c22d01b0b7475898bc26a38d2020f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dc84d86e_469cfe40",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/utils/Utils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-08-01T10:53:21Z",
+      "side": 1,
+      "message": "Considering this is part of a utils class and thus likely to be reused in a programme, the use of a precompiled pattern may be advisable.",
+      "revId": "3b373577818c22d01b0b7475898bc26a38d2020f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "402a96f5_9c87f707",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/data/MongoImageStoreTestSuite.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-08-01T10:53:21Z",
+      "side": 1,
+      "message": "Should this not be setUp()?",
+      "revId": "3b373577818c22d01b0b7475898bc26a38d2020f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
