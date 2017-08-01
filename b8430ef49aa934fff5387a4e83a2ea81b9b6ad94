@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff314873_34f21247",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/utils/RPGTableConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-08-01T11:21:56Z",
+      "side": 1,
+      "message": "Trailing whitespaces.",
+      "revId": "b8430ef49aa934fff5387a4e83a2ea81b9b6ad94",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "51c79ab4_6f3e7d0a",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/utils/RPGTableConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-08-01T11:21:56Z",
+      "side": 1,
+      "message": "Trailing whitespaces.",
+      "revId": "b8430ef49aa934fff5387a4e83a2ea81b9b6ad94",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
