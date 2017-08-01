@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f02abe88_324561e7",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/web/handler/RequestBodyHandler.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1011519
+      },
+      "writtenOn": "2017-08-01T11:15:41Z",
+      "side": 1,
+      "message": "Is there any reason this is called PARSED_TYP_KEY rather than PARSED_TYPE_KEY in keeping with the naming of all other constants?",
+      "revId": "92018ef7d53038eb88568816c3d950d14eaf2765",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
