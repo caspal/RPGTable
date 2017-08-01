@@ -16,6 +16,24 @@
       "revId": "d18775a5e19220d4bb8e10c29b6a09bc1557d4e1",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "aa149bc9_e80de11b",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/utils/MediaTypeDetector.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-08-01T18:57:06Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ff163156_a0c3d2d7",
+      "revId": "d18775a5e19220d4bb8e10c29b6a09bc1557d4e1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
