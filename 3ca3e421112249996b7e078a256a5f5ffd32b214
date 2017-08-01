@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1b8b73c1_2cad4b2c",
+        "filename": "README.md",
+        "patchSetId": 10
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-08-01T18:39:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2399055c_78d0e8f6",
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4c68d393_7d6d2746",
         "filename": "browser/package.json",
         "patchSetId": 10
@@ -30,6 +48,30 @@
       "writtenOn": "2017-07-31T11:53:56Z",
       "side": 1,
       "message": "An HTML5 Client\nFor rules of when to use a or an see\nhttp://www.englishpage.com/articles/a-vs-an.htm",
+      "range": {
+        "startLine": 4,
+        "startChar": 18,
+        "endLine": 4,
+        "endChar": 19
+      },
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c15dd5e9_4b874dc7",
+        "filename": "browser/package.json",
+        "patchSetId": 10
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-08-01T18:39:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4c68d393_7d6d2746",
       "range": {
         "startLine": 4,
         "startChar": 18,
@@ -65,6 +107,30 @@
     },
     {
       "key": {
+        "uuid": "7d12e627_13045843",
+        "filename": "browser/package.json",
+        "patchSetId": 10
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-08-01T18:39:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c4fff9ed_c9fa7d1a",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 2
+      },
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1beeaa75_18b5bf50",
         "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
         "patchSetId": 10
@@ -76,6 +142,24 @@
       "writtenOn": "2017-07-31T11:53:56Z",
       "side": 1,
       "message": "Is this \u003cp/\u003e a leftover from a copy-paste or intentional?",
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "12aef872_9a67bd51",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-08-01T18:39:12Z",
+      "side": 1,
+      "message": "no you can write \u003cp/\u003e instead of \u003cp\u003e\u003c/p\u003e",
+      "parentUuid": "1beeaa75_18b5bf50",
       "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -99,6 +183,24 @@
     },
     {
       "key": {
+        "uuid": "3acc08e0_f6ec3c81",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-08-01T18:39:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bf76395f_5f22809d",
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3290821e_9a96d645",
         "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
         "patchSetId": 10
@@ -110,6 +212,24 @@
       "writtenOn": "2017-07-31T11:53:56Z",
       "side": 1,
       "message": "just cleans up everything",
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "480f6851_9da72a92",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-08-01T18:39:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3290821e_9a96d645",
       "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
@@ -133,6 +253,24 @@
     },
     {
       "key": {
+        "uuid": "be77d19a_5a6a4604",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-08-01T18:39:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d5d7d840_8774de58",
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c89d1fde_9362210a",
         "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
         "patchSetId": 10
@@ -144,6 +282,24 @@
       "writtenOn": "2017-07-31T11:53:56Z",
       "side": 1,
       "message": "it manages the",
+      "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6ca976c9_64a950f7",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/RouterVerticleTest.java",
+        "patchSetId": 10
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-08-01T18:39:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c89d1fde_9362210a",
       "revId": "3ca3e421112249996b7e078a256a5f5ffd32b214",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
