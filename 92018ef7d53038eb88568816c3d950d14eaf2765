@@ -16,6 +16,24 @@
       "revId": "92018ef7d53038eb88568816c3d950d14eaf2765",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ae47028_681da451",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/web/handler/RequestBodyHandler.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-08-01T19:17:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f02abe88_324561e7",
+      "revId": "92018ef7d53038eb88568816c3d950d14eaf2765",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
