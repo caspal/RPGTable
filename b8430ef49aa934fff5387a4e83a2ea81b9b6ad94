@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9384b5f3_1d544fa5",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/utils/RPGTableConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-08-01T19:18:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ff314873_34f21247",
+      "revId": "b8430ef49aa934fff5387a4e83a2ea81b9b6ad94",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "51c79ab4_6f3e7d0a",
         "filename": "server/src/main/java/info/pascalkrause/rpgtable/utils/RPGTableConfig.java",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2017-08-01T11:21:56Z",
       "side": 1,
       "message": "Trailing whitespaces.",
+      "revId": "b8430ef49aa934fff5387a4e83a2ea81b9b6ad94",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ef8fdb4b_4d7d588f",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/utils/RPGTableConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-08-01T19:18:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "51c79ab4_6f3e7d0a",
       "revId": "b8430ef49aa934fff5387a4e83a2ea81b9b6ad94",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
