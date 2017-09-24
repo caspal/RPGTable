@@ -5,9 +5,9 @@ import java.io.IOException;
 import info.pascalkrause.rpgtable.api.ImageAPI;
 import info.pascalkrause.rpgtable.api.ImageApiImpl;
 import info.pascalkrause.rpgtable.data.MongoImageStore;
-import info.pascalkrause.rpgtable.handler.IndexHandler;
 import info.pascalkrause.rpgtable.utils.RPGTableConfig;
 import info.pascalkrause.rpgtable.web.ImageRoutes;
+import info.pascalkrause.rpgtable.web.WebAppRoutes;
 import info.pascalkrause.vertx.mongodata.datasource.MongoClientDataSource;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Context;
@@ -25,8 +25,8 @@ public class WebRouterVerticle extends AbstractVerticle {
 
     private Router createRoutes(ImageAPI imageApi) {
         Router router = Router.router(vertx);
-        router.route("/").handler(new IndexHandler(vertx));
-        router.mountSubRouter("/v1/images", new ImageRoutes(imageApi).createRoutes(vertx));
+        router.mountSubRouter("/", WebAppRoutes.createRouter(vertx));
+        router.mountSubRouter("/v1/images", new ImageRoutes(imageApi).createRouter(vertx));
         return router;
     }
 

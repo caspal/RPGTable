@@ -2,10 +2,11 @@
 # Get dir of current script
 bindir="$( cd "$(dirname "$0")" ; pwd -P )"
 projectDir=$(dirname ${bindir})
-
+webrootDir="${projectDir}/server/src/main/resources/webroot"
 echo "Install npm modules"
-(cd "${projectDir}/browser" && npm install)
-(cd "${projectDir}/browser" && npm run grunt build)
+(cd "${projectDir}/browser" && ng build)
+rm -rf "${webrootDir}/"*
+cp "${projectDir}/browser/dist/"* "${webrootDir}/"
 
 echo "Build fat jar"
 (cd "${projectDir}/server" && ./gradlew shadowJar)
