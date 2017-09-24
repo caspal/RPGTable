@@ -38,7 +38,7 @@ public class ImageRoutesTest extends WebVerticleBaseTest {
     protected Router initializeRouter(Vertx vertx) {
         imageApiMock = mock(ImageAPI.class);
         imageRoutes = new ImageRoutes(imageApiMock);
-        router = imageRoutes.createRoutes(vertx);
+        router = imageRoutes.createRouter(vertx);
         return router;
     }
 

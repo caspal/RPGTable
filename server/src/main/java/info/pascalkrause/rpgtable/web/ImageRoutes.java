@@ -36,7 +36,7 @@ public class ImageRoutes {
         this.requestBodyHandler = requestBodyHandler;
     }
 
-    public Router createRoutes(Vertx vertx) {
+    public Router createRouter(Vertx vertx) {
         if (Objects.isNull(requestBodyHandler)) {
             requestBodyHandler = new RequestBodyHandler(RPGTableConfig.getOrCreate(vertx).BODY_SIZE_LIMIT_BYTES,
                     ImageAPI.getSupportedImageTypes());
