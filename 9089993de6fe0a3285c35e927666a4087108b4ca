@@ -1,0 +1,136 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "025be313_9eb0ddf5",
+        "filename": "browser/package.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-11-12T09:19:41Z",
+      "side": 1,
+      "message": "RPGTable-HTML5-Client",
+      "range": {
+        "startLine": 2,
+        "startChar": 11,
+        "endLine": 2,
+        "endChar": 18
+      },
+      "revId": "9089993de6fe0a3285c35e927666a4087108b4ca",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f6228534_e9a24a8d",
+        "filename": "browser/package.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-11-12T09:19:41Z",
+      "side": 1,
+      "message": "\"description\": \"An HTML5 Client For RPGTable\",",
+      "revId": "9089993de6fe0a3285c35e927666a4087108b4ca",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "30bc403f_f9937589",
+        "filename": "browser/package.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-11-12T09:19:41Z",
+      "side": 1,
+      "message": "Is this correct?",
+      "range": {
+        "startLine": 4,
+        "startChar": 3,
+        "endLine": 4,
+        "endChar": 17
+      },
+      "revId": "9089993de6fe0a3285c35e927666a4087108b4ca",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b7351369_30017c6a",
+        "filename": "server/src/main/java/info/pascalkrause/rpgtable/web/WebAppRoutes.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-11-12T09:19:41Z",
+      "side": 1,
+      "message": "WS",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 4
+      },
+      "revId": "9089993de6fe0a3285c35e927666a4087108b4ca",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7f8e8e04_139778cb",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/web/WebAppRoutesTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-11-12T09:19:41Z",
+      "side": 1,
+      "message": "ws",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 4
+      },
+      "revId": "9089993de6fe0a3285c35e927666a4087108b4ca",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf1e6139_16199690",
+        "filename": "server/src/test/java/info/pascalkrause/rpgtable/web/WebAppRoutesTest.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011458
+      },
+      "writtenOn": "2017-11-12T09:19:41Z",
+      "side": 1,
+      "message": "ws",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 4
+      },
+      "revId": "9089993de6fe0a3285c35e927666a4087108b4ca",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
